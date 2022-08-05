@@ -1,0 +1,13 @@
+.gradle/
+.idea/
+out/
+build/
+.DS_Store
+*.swp
+rlog-sample/
+*.iml
+log/
+logs/
+access_log/
+gradlew*
+gradle/

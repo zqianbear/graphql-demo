@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "${springbootVersion}"
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: "${springbootVersion}"
+    implementation group: 'io.leangen.graphql', name: 'spqr', version: '0.11.2'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+    implementation 'com.alibaba:fastjson:1.2.83'
+}

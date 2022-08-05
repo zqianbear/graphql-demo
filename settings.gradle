@@ -1,0 +1,5 @@
+rootProject.name = 'graphql-demo'
+include 'primal'
+include 'sqpr'
+include 'sqprstarter'
+
